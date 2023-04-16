@@ -16,7 +16,7 @@
       <header class="p-header l-header">
         <P class="c-logo">Hamburger</P>
         <form class="p-search">
-          <input type="text" name="search" value="チーズバーガー" class="c-search-area">
+          <input type="search" class="c-search-area">
           <button class="c-button">検索</button>
           <div class="c-search--icon"></div>
         </form>
@@ -24,7 +24,7 @@
       </header>
       <div class="p-archive--image">
         <div class="c-bg--black--archive">
-          <h1>Search:</h1>
+          <h1>Menu:</h1>
         </div>
       </div>
       <article class="p-archive--content--wrapper">
@@ -33,7 +33,7 @@
         <section class="p-archive__item--wrapper">
           <div class="c-archive__image--cheeseBurger"></div>
           <div class="p-archive__item">
-            <h3>見出しが入ります</h3>
+            <h3>チーズバーガー</h3>
             <h4>小見出しが入ります</h4>
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
@@ -42,7 +42,7 @@
         <section class="p-archive__item--wrapper">
           <div class="c-archive__image--w-cheeseBurger"></div>
           <div class="p-archive__item">
-            <h3>見出しが入ります</h3>
+            <h3>ダブルチーズバーガー</h3>
             <h4>小見出しが入ります</h4>
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
@@ -51,25 +51,7 @@
         <section class="p-archive__item--wrapper">
           <div class="c-archive__image--s-cheeseBurger"></div>
           <div class="p-archive__item">
-            <h3>見出しが入ります</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-          </div>
-        </section>
-        <section class="p-archive__item--wrapper">
-          <div class="c-archive__image--s-cheeseBurger"></div>
-          <div class="p-archive__item">
-            <h3>見出しが入ります</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-          </div>
-        </section>
-        <section class="p-archive__item--wrapper">
-          <div class="c-archive__image--s-cheeseBurger"></div>
-          <div class="p-archive__item">
-            <h3>見出しが入ります</h3>
+            <h3>スペシャルチーズバーガー</h3>
             <h4>小見出しが入ります</h4>
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
@@ -148,8 +130,8 @@
   <script src="JS/toggle-class--open.js"></script>
   <script src="JS/toggle-class--close.js"></script>
   <!-- サイドメニュー表示時の黒い背景 -->
-  <script src="JS/fadeIn.js"></script>
-  <script src="JS/fadeOut.js"></script>
+  <!-- <script src="JS/fadeIn.js"></script>
+  <script src="JS/fadeOut.js"></script> -->
 </body>
 
 </html>
