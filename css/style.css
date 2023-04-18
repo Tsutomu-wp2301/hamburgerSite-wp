@@ -1368,6 +1368,14 @@ body {
   .p-footer .copyright {
     font-size: 0.9rem;
   }
+  .menu-footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 700px) {
   .p-content__item--wrapper {
