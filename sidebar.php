@@ -1,7 +1,7 @@
 <aside class="p-aside p-aside--fonts l-aside l-aside__font-layout">
       <button class="c-button-close"><p>Menuを閉じる</p></button><!-- メニュー閉じるボタン -->
       <h2>Menu</h2>
-      <h3>バーガー</h3>
+      <!-- <h3>バーガー</h3>
       <ul>
         <li>ハンバーガー</li>
         <li>チーズバーガー</li>
@@ -44,5 +44,22 @@
         <li>アップル</li>
         <li>紅茶(Ice/Hot)</li>
         <li>コーヒー(Ice/Hot)</li>
-      </ul>
+      </ul> -->
+
+      <!-- <?php
+        if ( is_active_sidebar( 'sideMenu_widget' ) ) :
+            dynamic_sidebar( 'sideMenu_widget' );
+        else:
+    ?>
+    <div class="widget">
+        <h2>No Widget</h2>
+        <p>ウィジットは設定されていません。</p>
+    </div>
+    <?php endif; ?> -->
+
+
+    <?php if ( is_active_sidebar('sideMenu_widget') ) : ?>
+  <?php dynamic_sidebar('sideMenu_widget'); ?>
+<?php endif; ?>
     </aside>
+
