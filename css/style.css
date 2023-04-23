@@ -1304,7 +1304,7 @@ body {
 .p-footer p {
   font-family: "M+ 1m";
 }
-.p-footer .menu-footer-menu-container .menu {
+.p-footer .menu-footer-nav-container .menu {
   display: flex;
   align-items: center;
 }
