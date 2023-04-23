@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <meta name="vewport" content="width=device-width, initial-scale=1">
-</head>
-<body class="l-body">
-  <div class="c-flex">
-    <main class="l-main">
-      <button class="c-slide--button"><a>Menu</a></button><!-- メニュー表示ボタン -->
-      <header class="p-header l-header">
-        <P class="c-logo">Hamburger</P>
-        <form class="p-search">
-          <input type="search" class="c-search-area">
-          <button class="c-button">検索</button>
-          <div class="c-search--icon"></div>
-        </form>
-        <div class="c-color-board--black"></div><!-- メニュー展開時に画面を暗くする -->
-      </header>
-
+<?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <section>
         <h1 class="p-page-image">ショップについて</h1>
         <article class="p-single--layout">
@@ -172,22 +148,4 @@
       </ul>
     </aside>
   </div>
-  <footer class="l-footer p-footer">
-    <div class="l-footer__layout">
-      <a href="#"><p>ショップ情報</p></a>
-      <div class="c-line"></div>
-      <a href="#"><p>ヒストリー</p></a>
-    </div>
-    <p class="copyright">Copyright :  RaisTech</p>
-  </footer>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <!-- is-activのトグルクラス -->
-  <!-- <script src="JS/toggle-class--open.js"></script>
-  <script src="JS/toggle-class--close.js"></script>
-  <script src="JS/fadeIn.js"></script>
-  <script src="JS/fadeOut.js"></script> -->
-</body>
-
-</html>
+  <?php get_footer(); ?>
