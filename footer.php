@@ -1,10 +1,11 @@
-<footer class="l-footer p-footer">
-    <div class="l-footer__layout">
-      <!-- <a href="#"><p>ショップ情報</p></a>
-      <div class="c-line"></div>
-      <a href="#"><p>ヒストリー</p></a> -->
-      <?php wp_nav_menu(['menu' => 'footer-menu']); ?>
-    </div>
-    <!-- <?php wp_nav_menu(['menu' => 'footer-menu']); ?> -->
+<footer class="l-footer p-footer" id="menu-footer-menu-container">
+    <?php wp_nav_menu(['menu' => 'footer-nav']); ?>
     <p class="copyright">Copyright :  RaisTech</p>
   </footer>
+  
+  <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+  <?php wp_footer(); ?>
+</body>
+</html>

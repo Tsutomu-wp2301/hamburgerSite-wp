@@ -46,20 +46,4 @@
         <li>コーヒー(Ice/Hot)</li>
       </ul> -->
 
-      <!-- <?php
-        if ( is_active_sidebar( 'sideMenu_widget' ) ) :
-            dynamic_sidebar( 'sideMenu_widget' );
-        else:
-    ?>
-    <div class="widget">
-        <h2>No Widget</h2>
-        <p>ウィジットは設定されていません。</p>
-    </div>
-    <?php endif; ?> -->
-
-
-    <?php if ( is_active_sidebar('sideMenu_widget') ) : ?>
-  <?php dynamic_sidebar('sideMenu_widget'); ?>
-<?php endif; ?>
-    </aside>
 
