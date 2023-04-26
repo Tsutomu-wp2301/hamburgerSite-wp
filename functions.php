@@ -6,6 +6,7 @@
   add_theme_support( 'post-thumbnails' );
 
 
+
   // タイトル出力
   function hamburgerSite_title( $title ) {
     if ( is_front_page() && is_home() ) { //トップページなら
@@ -20,13 +21,22 @@
 
 // スタイルシート、JSファイルの読み込み
 function add_files(){
+    // CSSファイルの読み込み
     wp_enqueue_style('my_style', get_template_directory_uri().'/css/style.css', array(),'1.0.0');
+
+    // グーグルフォントの読み込み
+    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(),'1.0.0');
+
+    // JSファイルの読み込み
     wp_enqueue_script('fadeIn_script', get_template_directory_uri().'/JS/fadeIn.js', array(),'1.0.0',true);
     wp_enqueue_script('fadeOut_script', get_template_directory_uri().'/JS/fadeOut.js', array(),'1.0.0',true);
     wp_enqueue_script('toggle_class_close_script', get_template_directory_uri().'/JS/toggle-class--close.js', array(),'1.0.0',true);
     wp_enqueue_script('toggle_class_open_script', get_template_directory_uri().'/JS/toggle-class--open.js', array(),'1.0.0',true);
 }
   add_action('wp_enqueue_scripts', 'add_files');
+
+
+
 
 
   // ウィジェットの追加
@@ -56,5 +66,8 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+?>
+
 
 
