@@ -382,7 +382,7 @@ body {
   .c-slide--button {
     position: absolute;
     right: 10px;
-    top: -20px;
+    top: 20px;
     font-size: 1.5rem;
     color: #707070;
     font-family: "Roboto";
@@ -397,7 +397,7 @@ body {
   .c-slide--button {
     position: absolute;
     right: 20px;
-    top: 0%;
+    top: 20px;
     font-size: 2rem;
     color: #707070;
     font-family: "Roboto";
@@ -406,6 +406,9 @@ body {
     opacity: 1;
     transition: 0.5s;
     z-index: 2;
+  }
+  .c-slide--button a {
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1304,7 +1307,7 @@ body {
 .p-footer p {
   font-family: "M+ 1m";
 }
-.p-footer .menu-footer-nav-container .menu {
+.p-footer .footer-nav-container .footer-nav {
   display: flex;
   align-items: center;
 }
@@ -2672,24 +2675,74 @@ body {
     color: white;
   }
 }
-@media screen and (min-width: 1200px) {
-  #menu-side-menu {
+@media screen and (max-width: 700px) {
+  .p-side-menu {
     margin-top: 100px;
   }
-  #menu-side-menu .sub-menu {
+  .p-side-menu .sub-menu {
     margin-bottom: 50px;
   }
-  #menu-side-menu a {
+  .p-side-menu a {
     text-decoration: none;
     font-size: 24px;
     color: #707070;
     font-family: "M+ 1m";
     font-weight: bold;
   }
-  #menu-side-menu .sub-menu {
+  .p-side-menu .sub-menu {
     margin-left: 0px;
   }
-  #menu-side-menu .sub-menu a {
+  .p-side-menu .sub-menu a {
+    font-size: 20px;
+    color: #707070;
+    list-style: none;
+    font-family: "M+ 1m";
+    font-weight: normal;
+  }
+}
+@media screen and (min-width:700.5px) and (max-width:1199.5px) {
+  .p-side-menu {
+    margin-top: 100px;
+  }
+  .p-side-menu .sub-menu {
+    margin-bottom: 50px;
+  }
+  .p-side-menu a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #707070;
+    font-family: "M+ 1m";
+    font-weight: bold;
+  }
+  .p-side-menu .sub-menu {
+    margin-left: 0px;
+  }
+  .p-side-menu .sub-menu a {
+    font-size: 20px;
+    color: #707070;
+    list-style: none;
+    font-family: "M+ 1m";
+    font-weight: normal;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-side-menu {
+    margin-top: 100px;
+  }
+  .p-side-menu .sub-menu {
+    margin-bottom: 50px;
+  }
+  .p-side-menu a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #707070;
+    font-family: "M+ 1m";
+    font-weight: bold;
+  }
+  .p-side-menu .sub-menu {
+    margin-left: 0px;
+  }
+  .p-side-menu .sub-menu a {
     font-size: 20px;
     color: #707070;
     list-style: none;
