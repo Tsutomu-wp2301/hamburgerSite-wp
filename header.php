@@ -13,6 +13,7 @@
   <?php wp_head(); ?>
 </head>
 <body class="l-body" <?php body_class(); ?>>
+<?php wp_body_open(); ?>
   <div class="c-flex">
     <main class="l-main">
       <button class="c-slide--button"><a>Menu</a></button><!-- メニュー表示ボタン -->

@@ -3,7 +3,7 @@
 
 @include m.mq(sp) {
   .p-product--image {
-    background-image: url(../../../image/cooked-foods.png);
+    background-image: url(../image/cooked-foods.png);
     width: 40%;
     height: 89px;
     margin-top: 30px;
@@ -12,7 +12,7 @@
     white-space: nowrap;
     overflow-x: auto;
     &--center {
-      background-image: url(../../../image/cooked-foods.png);
+      background-image: url(../image/cooked-foods.png);
       width: 75%;
       height: 166px;
       background-size: auto 100%;
@@ -26,14 +26,14 @@
 
 @include m.mq(tab) {
   .p-product--image {
-    background-image: url(../../../image/cooked-foods.png);
+    background-image: url(../image/cooked-foods.png);
     width: 40%;
     min-height: 189px;
     margin-top: 50px;
     background-size: cover;
     background-position: center;
     &--center {
-      background-image: url(../../../image/cooked-foods.png);
+      background-image: url(../image/cooked-foods.png);
       width: 81%;
       min-height: 358px;
       background-size: cover;
@@ -45,14 +45,14 @@
 
 @include m.mq(pc) {
   .p-product--image {
-    background-image: url(../../../image/cooked-foods.png);
+    background-image: url(../image/cooked-foods.png);
     width: 43%;
     min-height: 358px;
     margin-top: 50px;
     background-size: cover;
     background-position: center;
     &--center {
-      background-image: url(../../../image/cooked-foods.png);
+      background-image: url(../image/cooked-foods.png);
       width: 43%;
       height: 358px;
       background-size: cover;
