@@ -33,6 +33,7 @@
 
 @include m.mq(pc) {
   .p-content {
+    position: relative;
     width: 40%;
     min-height: 1196px;
     display: flex;
