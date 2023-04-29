@@ -1,29 +1,35 @@
+<!-- カスタムフィールド設定ページのIDを取得 -->
+<?php 
+$page = get_page_by_path('page-field');
+$id = $page->ID;
+?>
+
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <h1 class="p-main-image">ダミーサイト</h1>
       <article class="p-content--wrapper">
-        <section class="p-content p-content--bg">
+        <section class="p-content p-content--bg" id="js-takeOut">
           <h2 class="c-title">Take Out</h2>
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
-            <h3>Take OUT</h3>
-              <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+              <h3><?php echo CFS()->get('take_out_title_1',$id); ?></h3>
+              <p><?php echo CFS()->get('take_out_text_1',$id); ?></p>
             </div>
             <div class="p-content__item">
-              <h3>Take OUT</h3>
-              <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店</p>
+              <h3><?php echo CFS()->get('take_out_title_2',$id); ?></h3>
+              <p><?php echo CFS()->get('take_out_text_2',$id); ?></p>
             </div>
           </div>
         </section>
-        <section class="p-content p-content--bg--EatIn">
+        <section class="p-content p-content--bg--EatIn" id="js-eatIn">
           <h2 class="c-title">Eat In</h2>
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
-              <h3>Eat In</h3>
-              <p>店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
+              <h3><?php echo CFS()->get('eat_in_title_1',$id); ?></h3>
+              <p><?php echo CFS()->get('eat_in_text_1',$id); ?></p>
             </div>
             <div class="p-content__item">
-              <h3>Eat In</h3>
-              <p>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
+              <h3><?php echo CFS()->get('eat_in_title_2',$id); ?></h3>
+              <p><?php echo CFS()->get('eat_in_text_2',$id); ?></p>
             </div>
           </div>
         </section>
@@ -31,8 +37,8 @@
       <article class="c-bg--black">
         <div class="p-map">
           <div class="c-color-board">
-            <h2 class="c-title map">見出しが入ります</h2>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入りまテキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入りまテキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <h2 class="c-title map"><?php echo CFS()->get('map-title',$id); ?></h2>
+            <p><?php echo CFS()->get('map-text',$id); ?></p>
           </div>
         </div>
       </article>
@@ -40,7 +46,4 @@
     <?php get_sidebar(); ?>
   </div>
   <?php get_footer(); ?>
-
-
-
 

@@ -114,6 +114,10 @@ body {
     font-weight: bold;
     margin-top: 20px;
   }
+  .c-logo a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 @media screen and (min-width:700.5px) and (max-width:1199.5px) {
   .c-logo {
@@ -123,6 +127,10 @@ body {
     font-family: "Roboto";
     font-weight: bold;
   }
+  .c-logo a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 @media screen and (min-width: 1200px) {
   .c-logo {
@@ -131,6 +139,10 @@ body {
     overflow: hidden;
     font-family: "Roboto";
     font-weight: bold;
+  }
+  .c-logo a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 @media screen and (max-width: 700px) {
@@ -937,6 +949,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .p-content {
+    position: relative;
     width: 40%;
     min-height: 1196px;
     display: flex;
@@ -1183,6 +1196,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 .p-content--bg--EatIn {
   width: 90%;
@@ -1190,6 +1204,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
@@ -2344,7 +2359,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .p-product--item {
-    background-image: url(../image/cooked-foods.png);
     width: 100%;
     min-height: 257px;
     height: 100%;
