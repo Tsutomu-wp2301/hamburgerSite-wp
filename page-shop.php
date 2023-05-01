@@ -31,19 +31,6 @@ Template Name:ショップについて
             </div>
             <div class="p-product--image--center"></div>
             <ul class="p-product--item--wrapper">
-              <?php if( have_posts() ) : ?>
-                <?php 
-                while( have_posts() ) :
-                  the_post();
-                  ?>
-                  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <!-- <li class="p-product--item"> -->
-                      <?php the_post_thumbnail( 'page_eyecatch' ); ?>
-                    <!-- </li> -->
-                  </article>
-                <?php endwhile; ?>
-              <?php endif; ?>
-              <!-- <li class="p-product--item"></li>
               <li class="p-product--item"></li>
               <li class="p-product--item"></li>
               <li class="p-product--item"></li>
@@ -51,9 +38,12 @@ Template Name:ショップについて
               <li class="p-product--item"></li>
               <li class="p-product--item"></li>
               <li class="p-product--item"></li>
-              <li class="p-product--item"></li> -->
+              <li class="p-product--item"></li>
+              <li class="p-product--item"></li>
             </ul>
           </article>
+
+          
           <div class="p-single-list--wrapper">
             <ul>
               <li>1.リストリストリスト</li>
