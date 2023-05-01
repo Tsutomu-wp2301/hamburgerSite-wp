@@ -61,7 +61,8 @@ function post_has_archive($args, $post_type)
 {
     if ('post' == $post_type) {
         $args['rewrite'] = true; // リライトを有効にする
-        $args['has_archive'] = 'hamburger'; // 任意のスラッグ名
+        $args['has_archive'] = 'archives'; // 任意のスラッグ名
+        $args['label'] = '商品管理'; // ”投稿”の表示を”Menu”に変更
     }
     return $args;
 }
