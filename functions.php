@@ -1,11 +1,14 @@
 <?php 
 
 // テーマサポート
+function hamburgerSite_setup() {
   add_theme_support('menus');
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnails' );
+  add_image_size('page_eyecatch', '581', '358', true);
 
-
+}
+add_action('after_setup_theme', 'hamburgerSite_setup');
 
   // タイトル出力
   function hamburgerSite_title( $title ) {
