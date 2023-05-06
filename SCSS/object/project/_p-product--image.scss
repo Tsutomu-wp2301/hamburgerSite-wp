@@ -6,7 +6,7 @@
     background-image: url(../image/cooked-foods.png);
     width: 40%;
     height: 89px;
-    margin-top: 30px;
+    margin-top: 50px;
     background-size: auto 100%;
     background-position: center;
     white-space: nowrap;
@@ -45,18 +45,13 @@
 
 @include m.mq(pc) {
   .p-product--image {
-    background-image: url(../image/cooked-foods.png);
+    overflow: hidden;
+    height: 26%;
     width: 43%;
-    min-height: 358px;
     margin-top: 50px;
-    background-size: cover;
-    background-position: center;
     &--center {
-      background-image: url(../image/cooked-foods.png);
-      width: 43%;
+      width: 581px;
       height: 358px;
-      background-size: cover;
-      background-position: center;
       margin-top: 50px;
     }
   }

@@ -2,10 +2,8 @@
 
 @include m.mq(sp) {
   .p-code--area {
-    background-color: #F5F5F5;
     height: 237px;
     width: 100%;
-    margin-top: 30px;
     display: flex;
     align-items: center;
     padding-top: 20px;
@@ -16,10 +14,8 @@
 
 @include m.mq(tab) {
   .p-code--area {
-    background-color: #F5F5F5;
     height: 237px;
     width: 100%;
-    margin-top: 50px;
     display: flex;
     align-items: center;
     padding-top: 20px;
@@ -30,10 +26,8 @@
 
 @include m.mq(pc) {
   .p-code--area {
-    background-color: #F5F5F5;
     height: 237px;
     width: 100%;
-    margin-top: 50px;
     display: flex;
     align-items: center;
     padding-top: 20px;
