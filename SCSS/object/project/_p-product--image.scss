@@ -3,7 +3,6 @@
 
 @include m.mq(sp) {
   .p-product--image {
-    background-image: url(../image/cooked-foods.png);
     width: 40%;
     height: 89px;
     margin-top: 50px;
@@ -12,7 +11,6 @@
     white-space: nowrap;
     overflow-x: auto;
     &--center {
-      background-image: url(../image/cooked-foods.png);
       width: 75%;
       height: 166px;
       background-size: auto 100%;
@@ -26,14 +24,12 @@
 
 @include m.mq(tab) {
   .p-product--image {
-    background-image: url(../image/cooked-foods.png);
     width: 40%;
     min-height: 189px;
     margin-top: 50px;
     background-size: cover;
     background-position: center;
     &--center {
-      background-image: url(../image/cooked-foods.png);
       width: 81%;
       min-height: 358px;
       background-size: cover;

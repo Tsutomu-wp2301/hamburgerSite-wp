@@ -1,3 +1,10 @@
+シングルページ用のカスタム
+<?php  
+  global $post;
+  $page_id = $post->ID;
+?>
+
+
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <section>
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>

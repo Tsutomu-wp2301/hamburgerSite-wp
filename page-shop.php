@@ -20,91 +20,21 @@ Template Name:ショップについて
             <p>出典元：　<a href="#">○○○○○○○○○○○○</a></p>
           </blockquote>
           <article class="p-flex--single">
-            <div class="p-product--image--long"></div>
-                <div class="p-flex--single-content"><!-- 写真とテキストを横並び -->
-              <div class="p-product--image"></div>
+            <img class="p-product--image--long" src="<?php echo CFS()->get('main-menu-image'); ?>">
+            <div class="p-flex--single-content"><!-- 写真とテキストを横並び -->
+              <img class="p-product--image" src="<?php echo CFS()->get('menu1--image'); ?>">
               <P><?php echo CFS()->get('product-text1'); ?></P>
             </div>
             <div class="p-flex--single-content"><!-- 写真とテキストを横並び -->
-              <div class="p-product--image"></div>
+              <img class="p-product--image" src="<?php echo CFS()->get('menu2--image'); ?>">
               <P class="left"><?php echo CFS()->get('product-text2'); ?></P>
             </div>
-            <div class="p-product--image--center"></div>
-            <ul class="p-product--item--wrapper">
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-              <li class="p-product--item"></li>
-            </ul>
           </article>
-
-          
-          <div class="p-single-list--wrapper">
-            <ul>
-              <li>1.リストリストリスト</li>
-              <li>2.リストリストリスト</li>
-            </ul>
-            <ul class="indent">
-              <li>1.リスト2リスト2リスト2</li>
-              <li>2.リスト2リスト2リスト2</li>
-            </ul>
-            <ul>
-              <li>1.リストリストリスト</li>
-              <li>2.リストリストリスト</li>
-            </ul>
-            <ul>
-              <li>リストリストリスト</li>
-              <li>リストリストリスト</li>
-            </ul>
-            <ul class="indent">
-              <li>リスト2リスト2リスト2</li>
-              <li>リスト2リスト2リスト2</li>
-            </ul>
-            <ul>
-              <li>リストリストリスト</li>
-              <li>リストリストリスト</li>
-            </ul>
-          </div>
-          <div class="p-code--area">
-            <pre>
-          &lt;html&gt;
-                &lt;head&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                &lt;/body&gt;
-          &lt;/html&gt;
-            </pre>
-          </div>
-          <div class="p-flex--table">
-            <ul class="p-table--left">
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-            </ul>
-            <ul class="p-table--center">
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-            </ul>
-            <ul class="p-table--right">
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-              <li>テーブル</li>
-            </ul>
-          </div>
-          <button class="c-button--single">ボタン</button>
-          <p class="bold">boldboldboldboldboldboldbold</p>
+          <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?><!-- メインループ -->
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+              <?php the_content(); ?>
+            </article>
+          <?php endwhile;  endif; ?>
         </article>
       </section>
     </main>

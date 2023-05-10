@@ -5,9 +5,14 @@
         </div>
       </div>
       <article class="p-archive--content--wrapper">
-        <h2 class="c-archive--titlle">小見出しが入ります</h2>
-        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        <section class="p-archive__item--wrapper">
+        <h2 class="c-archive--titlle"><?php echo CFS()->get('h2-archive'); ?>小見出しが入ります</h2>
+        <p><?php echo CFS()->get('text-archive'); ?>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+            <?php get_template_part( 'template-parts/excerpt', 'post'); ?>
+
+        <!-- <section class="p-archive__item--wrapper">
           <div class="c-archive__image--cheeseBurger"></div>
           <div class="p-archive__item">
             <h3>チーズバーガー</h3>
@@ -24,8 +29,8 @@
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
           </div>
-        </section>
-        <section class="p-archive__item--wrapper">
+        </section> -->
+        <!-- <section class="p-archive__item--wrapper">
           <div class="c-archive__image--s-cheeseBurger"></div>
           <div class="p-archive__item">
             <h3>スペシャルチーズバーガー</h3>
@@ -33,11 +38,13 @@
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
           </div>
-        </section>
-
+        </section> -->
+            </article>
+          <?php endwhile;  endif; ?>
       </article>
       <nav class="p-navigation">
-        <ul>
+      <?php wp_pagenavi(); ?>
+        <!-- <ul>
           <li>page 1/10</li>
           <li class="c-back"></li>
           <li class="p-page--number">１</li>
@@ -50,7 +57,7 @@
           <li class="p-page--number">8</li>
           <li class="p-page--number">9</li>
           <li class="c-next"></li>
-        </ul>
+        </ul> -->
       </nav>
       <div class="c-color-board--black"></div><!-- メニュー展開時に画面を暗くする -->
     </main>
