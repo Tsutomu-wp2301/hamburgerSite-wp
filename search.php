@@ -1,22 +1,20 @@
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <div class="p-archive--image">
         <div class="c-bg--black--archive">
-          <h1>Search:</h1>
+          <h1><?php single_term_title(); ?></h1>
         </div>
       </div>
       <article class="p-archive--content--wrapper">
         <h2 class="c-archive--titlle">小見出しが入ります</h2>
         <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        <section class="p-archive__item--wrapper">
-          <div class="c-archive__image--cheeseBurger"></div>
-          <div class="p-archive__item">
-            <h3>見出しが入ります</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-          </div>
-        </section>
-        <section class="p-archive__item--wrapper">
+        
+        <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <?php get_template_part( 'template-parts/excerpt', 'post'); ?>
+          </article>
+        <?php endwhile;  endif; ?>
+
+        <!-- <section class="p-archive__item--wrapper">
           <div class="c-archive__image--w-cheeseBurger"></div>
           <div class="p-archive__item">
             <h3>見出しが入ります</h3>
@@ -51,7 +49,7 @@
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
           </div>
-        </section>
+        </section> -->
 
       </article>
       <nav class="p-navigation">

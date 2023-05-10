@@ -2278,7 +2278,6 @@ body {
 }
 @media screen and (max-width: 700px) {
   .p-product--image {
-    background-image: url(../image/cooked-foods.png);
     width: 40%;
     height: 89px;
     margin-top: 50px;
@@ -2288,7 +2287,6 @@ body {
     overflow-x: auto;
   }
   .p-product--image--center {
-    background-image: url(../image/cooked-foods.png);
     width: 75%;
     height: 166px;
     background-size: auto 100%;
@@ -2300,7 +2298,6 @@ body {
 }
 @media screen and (min-width:700.5px) and (max-width:1199.5px) {
   .p-product--image {
-    background-image: url(../image/cooked-foods.png);
     width: 40%;
     min-height: 189px;
     margin-top: 50px;
@@ -2308,7 +2305,6 @@ body {
     background-position: center;
   }
   .p-product--image--center {
-    background-image: url(../image/cooked-foods.png);
     width: 81%;
     min-height: 358px;
     background-size: cover;
