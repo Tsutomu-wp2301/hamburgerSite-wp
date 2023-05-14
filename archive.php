@@ -9,41 +9,40 @@
         <p><?php echo CFS()->get('text-archive'); ?>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
             <?php get_template_part( 'template-parts/excerpt', 'post'); ?>
-
-        <!-- <section class="p-archive__item--wrapper">
-          <div class="c-archive__image--cheeseBurger"></div>
-          <div class="p-archive__item">
-            <h3>チーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-          </div>
-        </section>
-        <section class="p-archive__item--wrapper">
-          <div class="c-archive__image--w-cheeseBurger"></div>
-          <div class="p-archive__item">
-            <h3>ダブルチーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-          </div>
-        </section> -->
-        <!-- <section class="p-archive__item--wrapper">
-          <div class="c-archive__image--s-cheeseBurger"></div>
-          <div class="p-archive__item">
-            <h3>スペシャルチーズバーガー</h3>
-            <h4>小見出しが入ります</h4>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-          </div>
-        </section> -->
-            </article>
-          <?php endwhile;  endif; ?>
+            <!-- <section class="p-archive__item--wrapper">
+              <div class="c-archive__image--cheeseBurger"></div>
+              <div class="p-archive__item">
+                <h3>チーズバーガー</h3>
+                <h4>小見出しが入ります</h4>
+                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
+              </div>
+            </section>
+            <section class="p-archive__item--wrapper">
+              <div class="c-archive__image--w-cheeseBurger"></div>
+              <div class="p-archive__item">
+                <h3>ダブルチーズバーガー</h3>
+                <h4>小見出しが入ります</h4>
+                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
+              </div>
+            </section> -->
+            <!-- <section class="p-archive__item--wrapper">
+              <div class="c-archive__image--s-cheeseBurger"></div>
+              <div class="p-archive__item">
+                <h3>スペシャルチーズバーガー</h3>
+                <h4>小見出しが入ります</h4>
+                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
+              </div>
+            </section> -->
+          </article>
+        <?php endwhile;  endif; ?>
       </article>
       <nav class="p-navigation">
-      <?php wp_pagenavi(); ?>
+        <p>page</p>
+        <?php wp_pagenavi(); ?>
         <!-- <ul>
           <li>page 1/10</li>
           <li class="c-back"></li>

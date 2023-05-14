@@ -1,16 +1,14 @@
-シングルページ用のカスタム
 <?php  
   global $post;
   $page_id = $post->ID;
 ?>
-
 
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <section>
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <h1 class="p-single-image"><?php echo get_the_title(); ?></h1>
           <article class="p-single--layout">
-          <h2><?php echo CFS()->get('h2-menu'); ?></h2>
+            <h2><?php echo CFS()->get('h2-menu'); ?></h2>
             <p><?php echo CFS()->get('h2-menu-text'); ?></p>
             <h3><?php echo CFS()->get('h3-menu'); ?></h3>
             <h4><?php echo CFS()->get('h4-menu'); ?></h4>
@@ -30,9 +28,9 @@
                 <img class="p-product--image" src="<?php echo CFS()->get('menu2-image'); ?>">
                 <P class="left"><?php echo CFS()->get('menu2-text'); ?></P>
               </div>
-                <?php the_content(); ?>
+              <?php the_content(); ?>
             </article>
-           </article>
+          </article>
         <?php endwhile;  endif; ?>
       </section>
     </main>
