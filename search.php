@@ -53,7 +53,9 @@
 
       </article>
       <nav class="p-navigation">
-        <ul>
+        <p>page</p>
+        <?php wp_pagenavi(); ?>
+        <!-- <ul>
           <li>page 1/10</li>
           <li class="c-back"></li>
           <li class="p-page--number">１</li>
@@ -66,7 +68,7 @@
           <li class="p-page--number">8</li>
           <li class="p-page--number">9</li>
           <li class="c-next"></li>
-        </ul>
+        </ul> -->
       </nav>
       <div class="c-color-board--black"></div><!-- メニュー展開時に画面を暗くする -->
     </main>
