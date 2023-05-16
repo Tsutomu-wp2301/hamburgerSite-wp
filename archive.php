@@ -1,33 +1,22 @@
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <div class="p-archive--image">
         <div class="c-bg--black--archive">
-          <h1>Menu:</h1>
+          <h1>Menu:<?php
+          $category = get_the_category();
+          echo ' ';
+          if ($category) {
+            foreach ($category as $cat) {
+              echo esc_html($cat->name) . ' ';
+            }
+          }
+          ?>
+          </h1>
         </div>
       </div>
       <article class="p-archive--content--wrapper">
         <h2 class="c-archive--titlle"><?php echo CFS()->get('h2-archive'); ?>小見出しが入ります</h2>
         <p><?php echo CFS()->get('text-archive'); ?>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         
-        
-      <!-- /* サブループ開始 */ -->
-       <!-- <?php 
-          $search_args = array(
-            'post-type'       => 'post',  /* 出力する投稿タイプ */
-            'posts_per_page'  => '3',  /* 表示数 */
-            'category_name'   =>'','',  /* カテゴリーのスラッグ名 */
-            'order'           =>'',  /* 昇順はASC、降順はDESC */
-            'orderby'         =>'',  /* 何を基準に並び替えるか */
-          );
-          $search_post_query = new WP_Query($search_args);
-          if($search_post_query->have_posts()) : 
-            ?>
-            <?php while($search_post_query->have_posts()) :
-            $search_post_query->the_post();
-            ?>
-          <?php get_template_part( 'template-parts/excerpt', 'post'); ?>
-        <?php endwhile; wp_reset_postdata(); endif; ?> -->
-        <!-- サブループ終了 -->
-
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php get_template_part( 'template-parts/excerpt', 'post'); ?>

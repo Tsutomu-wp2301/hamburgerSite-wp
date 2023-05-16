@@ -11,12 +11,12 @@ $id = $page->ID;
           <h2 class="c-title">Take Out</h2>
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('take_out_title_1',$id); ?></h3>
-              <p><?php echo CFS()->get('take_out_text_1',$id); ?></p>
+              <h3><?php echo esc_html(CFS()->get('take_out_title_1',$id)); ?></h3>
+              <p><?php echo esc_html(CFS()->get('take_out_text_1',$id)); ?></p>
             </div>
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('take_out_title_2',$id); ?></h3>
-              <p><?php echo CFS()->get('take_out_text_2',$id); ?></p>
+              <h3><?php echo esc_html(CFS()->get('take_out_title_2',$id)); ?></h3>
+              <p><?php echo esc_html(CFS()->get('take_out_text_2',$id)); ?></p>
             </div>
           </div>
         </section>
@@ -24,12 +24,12 @@ $id = $page->ID;
           <h2 class="c-title">Eat In</h2>
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('eat_in_title_1',$id); ?></h3>
-              <p><?php echo CFS()->get('eat_in_text_1',$id); ?></p>
+              <h3><?php echo esc_html(CFS()->get('eat_in_title_1',$id)); ?></h3>
+              <p><?php echo esc_html(CFS()->get('eat_in_text_1',$id)); ?></p>
             </div>
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('eat_in_title_2',$id); ?></h3>
-              <p><?php echo CFS()->get('eat_in_text_2',$id); ?></p>
+              <h3><?php echo esc_html(CFS()->get('eat_in_title_2',$id)); ?></h3>
+              <p><?php echo esc_html(CFS()->get('eat_in_text_2',$id)); ?></p>
             </div>
           </div>
         </section>
@@ -37,8 +37,8 @@ $id = $page->ID;
       <article class="c-bg--black">
         <div class="p-map">
           <div class="c-color-board">
-            <h2 class="c-title map"><?php echo CFS()->get('map-title',$id); ?></h2>
-            <p><?php echo CFS()->get('map-text',$id); ?></p>
+            <h2 class="c-title map"><?php echo esc_html(CFS()->get('map-title',$id)); ?></h2>
+            <p><?php echo esc_html(CFS()->get('map-text',$id)); ?></p>
           </div>
         </div>
       </article>

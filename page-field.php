@@ -17,12 +17,12 @@ Template Name:フロントページ用のフィールド設定
           <h2 class="c-title">Take Out</h2>
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('take_out_title_1'); ?></h3>
-                <p><?php echo CFS()->get('take_out_text_1'); ?></p>
+              <h3><?php echo esc_html(CFS()->get('take_out_title_1')); ?></h3>
+                <p><?php echo esc_html(CFS()->get('take_out_text_1')); ?></p>
               </div>
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('take_out_title_2'); ?></h3>
-              <p><?php echo CFS()->get('take_out_text_2'); ?></p>
+              <h3><?php echo esc_html(CFS()->get('take_out_title_2')); ?></h3>
+              <p><?php echo esc_html(CFS()->get('take_out_text_2')); ?></p>
             </div>
           </div>
         </section>
@@ -30,12 +30,12 @@ Template Name:フロントページ用のフィールド設定
           <h2 class="c-title">Eat In</h2>
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('eat_in_title_1'); ?></h3>
-              <p><?php echo CFS()->get('eat_in_text_1'); ?></p>
+              <h3><?php echo esc_html(CFS()->get('eat_in_title_1')); ?></h3>
+              <p><?php echo esc_html(CFS()->get('eat_in_text_1')); ?></p>
             </div>
             <div class="p-content__item">
-              <h3><?php echo CFS()->get('eat_in_title_2'); ?></h3>
-                <p><?php echo CFS()->get('eat_in_text_2'); ?></p>
+              <h3><?php echo esc_html(CFS()->get('eat_in_title_2')); ?></h3>
+                <p><?php echo esc_html(CFS()->get('eat_in_text_2')); ?></p>
               </div>
             </div>
         </section>
@@ -43,8 +43,8 @@ Template Name:フロントページ用のフィールド設定
       <article class="c-bg--black">
         <div class="p-map">
           <div class="c-color-board">
-            <h2 class="c-title map"><?php echo CFS()->get('map-title'); ?></h2>
-            <p><?php echo CFS()->get('map-text'); ?></p>
+            <h2 class="c-title map"><?php echo esc_html(CFS()->get('map-title')); ?></h2>
+            <p><?php echo esc_html(CFS()->get('map-text')); ?></p>
           </div>
         </div>
       </article>
