@@ -1249,9 +1249,12 @@ body {
   .p-content__item h3 {
     font-size: 22px;
     margin-bottom: 8px;
+    font-family: "M+1m";
   }
   .p-content__item p {
     font-size: 16px;
+    color: #3C2A10;
+    font-family: "M+1m";
   }
 }
 @media screen and (min-width:700.5px) and (max-width:1199.5px) {
@@ -1266,9 +1269,12 @@ body {
   .p-content__item h3 {
     font-size: 24px;
     margin-bottom: 8px;
+    font-family: "M+1m";
   }
   .p-content__item p {
     font-size: 14px;
+    color: #3C2A10;
+    font-family: "M+1m";
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1283,9 +1289,12 @@ body {
   .p-content__item h3 {
     font-size: 24px;
     margin-bottom: 8px;
+    font-family: "M+1m";
   }
   .p-content__item p {
     font-size: 16px;
+    color: #3C2A10;
+    font-family: "M+1m";
   }
 }
 @media screen and (max-width: 700px) {
@@ -1644,14 +1653,6 @@ body {
     font-family: "Roboto";
     font-weight: bold;
     margin-left: 25px;
-  }
-  .p-archive--image h1::after {
-    content: "チーズバーガー";
-    font-size: 16px;
-    font-family: "M+ 1m";
-    color: white;
-    margin-top: 15px;
-    margin-left: 20px;
   }
 }
 @media screen and (max-width: 700px) {

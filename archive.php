@@ -1,62 +1,32 @@
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <div class="p-archive--image">
         <div class="c-bg--black--archive">
-          <h1>Menu:</h1>
+          <h1>Menu:<?php
+          $category = get_the_category();
+          echo ' ';
+          if ($category) {
+            foreach ($category as $cat) {
+              echo esc_html($cat->name) . ' ';
+            }
+          }
+          ?>
+          </h1>
         </div>
       </div>
       <article class="p-archive--content--wrapper">
         <h2 class="c-archive--titlle"><?php echo CFS()->get('h2-archive'); ?>小見出しが入ります</h2>
         <p><?php echo CFS()->get('text-archive'); ?>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php get_template_part( 'template-parts/excerpt', 'post'); ?>
-            <!-- <section class="p-archive__item--wrapper">
-              <div class="c-archive__image--cheeseBurger"></div>
-              <div class="p-archive__item">
-                <h3>チーズバーガー</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-              </div>
-            </section>
-            <section class="p-archive__item--wrapper">
-              <div class="c-archive__image--w-cheeseBurger"></div>
-              <div class="p-archive__item">
-                <h3>ダブルチーズバーガー</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-              </div>
-            </section> -->
-            <!-- <section class="p-archive__item--wrapper">
-              <div class="c-archive__image--s-cheeseBurger"></div>
-              <div class="p-archive__item">
-                <h3>スペシャルチーズバーガー</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <a href="#" class="c-button--archive p-stretched--link">詳しく見る</a>
-              </div>
-            </section> -->
           </article>
         <?php endwhile;  endif; ?>
+        
       </article>
       <nav class="p-navigation">
         <p>page</p>
         <?php wp_pagenavi(); ?>
-        <!-- <ul>
-          <li>page 1/10</li>
-          <li class="c-back"></li>
-          <li class="p-page--number">１</li>
-          <li class="p-page--number">2</li>
-          <li class="p-page--number">3</li>
-          <li class="p-page--number">4</li>
-          <li class="p-page--number">5</li>
-          <li class="p-page--number">6</li>
-          <li class="p-page--number">7</li>
-          <li class="p-page--number">8</li>
-          <li class="p-page--number">9</li>
-          <li class="c-next"></li>
-        </ul> -->
       </nav>
       <div class="c-color-board--black"></div><!-- メニュー展開時に画面を暗くする -->
     </main>

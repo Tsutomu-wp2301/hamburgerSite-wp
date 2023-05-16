@@ -7,9 +7,8 @@
   </div>
   <div class="p-archive__item">
     <h3><?php the_title(); ?></h3>
-    <h4><?php echo CFS()->get('h2-menu',$id); ?></h4>
-    <!-- <?php the_excerpt(); ?> -->
-    <p><?php echo mb_substr(get_the_excerpt(),0,60) . '...'; ?></p>
+    <h4><?php echo esc_html(CFS()->get('h2-menu',$id)); ?></h4>
+    <p><?php echo esc_html(mb_substr(get_the_excerpt(),0,60)) . '...'; ?></p>
     <a href="<?php the_permalink(); ?>" class="c-button--archive p-stretched--link">詳しく見る</a>
   </div>
 
