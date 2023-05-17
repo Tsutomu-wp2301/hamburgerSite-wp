@@ -8,7 +8,7 @@
 
 <?php 
 /* 
-Template Name:フロントページ用のフィールド設定
+Template Name:フロント、サーチ、アーカイブページ用のフィールド設定
 */ 
 ?>
 
@@ -48,6 +48,27 @@ Template Name:フロントページ用のフィールド設定
           </div>
         </div>
       </article>
+      <br>
+      <br>
+      <br>
+
+      <!-- アーカイブページの見出し--カスタムフィールド -->
+      <article class="p-archive--content--wrapper">
+        <h2 class="c-archive--titlle"><?php echo esc_html(CFS()->get('h2-archive')); ?></h2>
+        <p><?php echo esc_html(CFS()->get('text-archive')); ?></p>
+      </article>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!-- サーチページの見出し---カスタムフィールド -->
+      <article class="p-archive--content--wrapper">
+        <h2 class="c-archive--titlle"><?php echo esc_html(CFS()->get('h2-search')); ?></h2>
+        <p><?php echo esc_html(CFS()->get('text-search')); ?></p>
+      </article>
+
     </main>
   </div>
 </div>
