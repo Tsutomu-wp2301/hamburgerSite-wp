@@ -1,3 +1,10 @@
+<!-- カスタムフィールド設定ページのIDを取得 -->
+<?php 
+$page = get_page_by_path('page-field');
+$id = $page->ID;
+?>
+
+
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <div class="p-archive--image">
         <div class="c-bg--black--archive">
@@ -14,8 +21,8 @@
         </div>
       </div>
       <article class="p-archive--content--wrapper">
-        <h2 class="c-archive--titlle"><?php echo CFS()->get('h2-archive'); ?>小見出しが入ります</h2>
-        <p><?php echo CFS()->get('text-archive'); ?>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <h2 class="c-archive--titlle"><?php echo esc_html(CFS()->get('h2-archive',$id)); ?></h2>
+        <p><?php echo esc_html(CFS()->get('text-archive',$id)); ?></p>
         
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

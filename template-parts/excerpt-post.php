@@ -1,10 +1,9 @@
 <section class="p-archive__item--wrapper">
   <?php if(has_post_thumbnail()) : ?>
-  <div class="c-archive__image--cheeseBurger"><?php the_post_thumbnail('archive_thumbnail'); ?>
+  <?php the_post_thumbnail('archive_thumbnail',array('class' => 'c-post--thumbnail')); ?>
     <?php else : ?>
       <img src='<?php echo exc_url(get_template_directory_uri()); ?>/image/hamburger.png'>
     <?php endif; ?>
-  </div>
   <div class="p-archive__item">
     <h3><?php the_title(); ?></h3>
     <h4><?php echo esc_html(CFS()->get('h2-menu',$id)); ?></h4>

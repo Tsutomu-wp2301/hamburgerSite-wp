@@ -677,76 +677,6 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  .c-archive__image--cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    height: 230px;
-    width: 100%;
-    display: block;
-    background-size: cover;
-  }
-  .c-archive__image--cheeseBurger img {
-    width: 100%;
-    height: auto;
-  }
-  .c-archive__image--w-cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    height: 230px;
-    width: 100%;
-    display: block;
-    background-size: cover;
-  }
-  .c-archive__image--s-cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    height: 230px;
-    width: 100%;
-    display: block;
-    background-size: cover;
-  }
-}
-@media screen and (min-width:700.5px) and (max-width:1199.5px) {
-  .c-archive__image--cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    width: 50%;
-    background-size: cover;
-  }
-  .c-archive__image--cheeseBurger img {
-    width: 100%;
-    height: auto;
-    min-height: 231px;
-  }
-  .c-archive__image--w-cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    width: 50%;
-    background-size: cover;
-  }
-  .c-archive__image--s-cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    width: 50%;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .c-archive__image--cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    width: 50%;
-    background-size: cover;
-  }
-  .c-archive__image--cheeseBurger img {
-    width: 100%;
-    height: auto;
-  }
-  .c-archive__image--w-cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    width: 50%;
-    background-size: cover;
-  }
-  .c-archive__image--s-cheeseBurger {
-    background-image: url(../image/hamburger.png);
-    width: 50%;
-    background-size: cover;
-  }
-}
-@media screen and (max-width: 700px) {
   .c-button--archive {
     font-size: 16px;
     font-weight: bold;
@@ -960,6 +890,27 @@ body {
     position: absolute;
     left: 4px;
     top: -6.5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .c-post--thumbnail {
+    width: 100%;
+    height: auto;
+    min-height: 231px;
+  }
+}
+@media screen and (min-width:700.5px) and (max-width:1199.5px) {
+  .c-post--thumbnail {
+    width: 50%;
+    height: auto;
+    min-height: 231px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .c-post--thumbnail {
+    width: 50%;
+    height: auto;
+    min-height: 231px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1612,13 +1563,6 @@ body {
     font-weight: bold;
     margin-left: 25px;
   }
-  .p-archive--image h1::after {
-    content: "チーズバーガー";
-    font-size: 16px;
-    font-family: "M+ 1m";
-    color: white;
-    margin-top: 15px;
-  }
 }
 @media screen and (min-width:700.5px) and (max-width:1199.5px) {
   .p-archive--image {
@@ -1638,14 +1582,6 @@ body {
     font-family: "Roboto";
     font-weight: bold;
     margin-left: 25px;
-  }
-  .p-archive--image h1::after {
-    content: "チーズバーガー";
-    font-size: 16px;
-    font-family: "M+ 1m";
-    color: white;
-    margin-top: 15px;
-    margin-left: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
