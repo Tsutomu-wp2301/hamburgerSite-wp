@@ -9,6 +9,10 @@
     width: 100%;
     display: block;
     background-size: cover;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .c-archive__image--w-cheeseBurger {
     background-image: url(../image/hamburger.png);
@@ -31,6 +35,11 @@
     background-image: url(../image/hamburger.png);
     width: 50%;
     background-size: cover;
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 231px;
+    }
   }
   .c-archive__image--w-cheeseBurger {
     background-image: url(../image/hamburger.png);
@@ -49,6 +58,10 @@
     background-image: url(../image/hamburger.png);
     width: 50%;
     background-size: cover;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .c-archive__image--w-cheeseBurger {
     background-image: url(../image/hamburger.png);

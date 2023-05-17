@@ -684,6 +684,10 @@ body {
     display: block;
     background-size: cover;
   }
+  .c-archive__image--cheeseBurger img {
+    width: 100%;
+    height: auto;
+  }
   .c-archive__image--w-cheeseBurger {
     background-image: url(../image/hamburger.png);
     height: 230px;
@@ -705,6 +709,11 @@ body {
     width: 50%;
     background-size: cover;
   }
+  .c-archive__image--cheeseBurger img {
+    width: 100%;
+    height: auto;
+    min-height: 231px;
+  }
   .c-archive__image--w-cheeseBurger {
     background-image: url(../image/hamburger.png);
     width: 50%;
@@ -721,6 +730,10 @@ body {
     background-image: url(../image/hamburger.png);
     width: 50%;
     background-size: cover;
+  }
+  .c-archive__image--cheeseBurger img {
+    width: 100%;
+    height: auto;
   }
   .c-archive__image--w-cheeseBurger {
     background-image: url(../image/hamburger.png);
