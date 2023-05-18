@@ -40,7 +40,7 @@ $id = $page->ID;
     <?php get_sidebar(); ?>
   </div>
   <nav class="p-navigation--sp">
-    <P><?php previous_post_link('%link', '<< 前へ'); ?></P>
-    <P><?php next_post_link('%link', '次へ >>'); ?></P>
+    <P><?php previous_posts_link('<< 前へ'); ?></P>
+    <P><?php next_posts_link('次へ >>'); ?></P>
   </nav>
   <?php get_footer(); ?>
