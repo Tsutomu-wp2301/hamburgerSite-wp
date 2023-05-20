@@ -1739,6 +1739,10 @@ body {
     margin-bottom: 25px;
     position: relative;
   }
+  .p-archive__item--wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (min-width:700.5px) and (max-width:1199.5px) {
   .p-archive__item--wrapper {
@@ -1747,6 +1751,10 @@ body {
     align-items: stretch;
     margin-top: 20px;
     position: relative;
+  }
+  .p-archive__item--wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .p-archive--content--wrapper .p-archive__item--wrapper:nth-of-type(1) {
     margin-top: 30px;
@@ -1763,6 +1771,10 @@ body {
     align-items: stretch;
     margin-top: 25px;
     position: relative;
+  }
+  .p-archive__item--wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .p-archive--content--wrapper .p-archive__item--wrapper:nth-of-type(1) {
     margin-top: 50px;
