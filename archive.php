@@ -21,8 +21,24 @@ $id = $page->ID;
         </div>
       </div>
       <article class="p-archive--content--wrapper">
-        <h2 class="c-archive--titlle"><?php echo esc_html(CFS()->get('h2-archive',$id)); ?></h2>
-        <p><?php echo esc_html(CFS()->get('text-archive',$id)); ?></p>
+        <h2 class="c-archive--titlle">
+          <?php $h2_archive = CFS()->get('h2-archive',$id); ?>
+          <?php if(!empty($h2_archive)) {
+            echo esc_html($h2_archive);
+            } else { 
+              echo 'アーカイブの小見出しを設定します';
+            } 
+          ?>
+        </h2>
+        <p>
+          <?php $text_archive = CFS()->get('text-archive',$id); ?>
+          <?php if(!empty($text_archive)) {
+            echo esc_html($text_archive);
+            } else { 
+              echo 'ここにアーカイブの説明文をを入力します';
+            } 
+          ?>
+        </p>
         
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

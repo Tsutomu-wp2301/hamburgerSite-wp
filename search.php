@@ -11,8 +11,24 @@ $id = $page->ID;
         </div>
       </div>
       <article class="p-archive--content--wrapper">
-      <h2 class="c-archive--titlle"><?php echo CFS()->get('h2-search',$id); ?></h2>
-        <p><?php echo CFS()->get('text-search',$id); ?></p>
+        <h2 class="c-archive--titlle">
+          <?php $h2_search_title = CFS()->get('h2_search',$id); ?>
+            <?php if(!empty($h2_search_title)) {
+            echo esc_html($h2_search_title);
+            } else { 
+              echo 'サーチページの小見出しを設定します';
+            } 
+          ?>
+        </h2>
+        <p>
+          <?php $search_text = CFS()->get('text_search',$id); ?>
+          <?php if(!empty($search_text)) {
+            echo esc_html($search_text);
+            } else { 
+              echo 'サーチページの説明文を入力します';
+            } 
+          ?>
+        </p>
 
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
