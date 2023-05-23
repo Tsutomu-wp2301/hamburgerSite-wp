@@ -78,8 +78,3 @@ function custom_search_posts_per_page($query) {
 add_filter('pre_get_posts', 'custom_search_posts_per_page');
 
 
-
-?>
-
-
-
