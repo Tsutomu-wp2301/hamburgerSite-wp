@@ -16,7 +16,7 @@ $id = $page->ID;
                 <?php if(!empty($h2_take_out)) {
                   echo esc_html($h2_take_out);
                   } else { 
-                    echo 'テイクアウトの小見出しを設定';
+                    echo 'テイクアウトの小見出しを設定1';
                   } 
                 ?>
               </h3>
@@ -33,10 +33,10 @@ $id = $page->ID;
             <div class="p-content__item">
               <h3>
                 <?php $h2_take_out2 = CFS()->get('take_out_title_2',$id); ?>
-                <?php if(!empty($h2_take_out)) {
-                  echo esc_html($h2_take_out);
+                <?php if(!empty($h2_take_out2)) {
+                  echo esc_html($h2_take_out2);
                   } else { 
-                    echo 'テイクアウトの小見出しを設定';
+                    echo 'テイクアウトの小見出しを設定2';
                   } 
                 ?>
               </h3>
