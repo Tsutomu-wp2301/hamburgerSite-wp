@@ -18,7 +18,7 @@ Template Name:フロント、サーチ、アーカイブページ用のフィー
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
               <h3>
-              <?php $h2_take_out = CFS()->get('take_out_title_1'); ?>
+                <?php $h2_take_out = CFS()->get('take_out_title_1'); ?>
                 <?php if(!empty($h2_take_out)) {
                   echo esc_html($h2_take_out);
                 } else { 
@@ -35,8 +35,8 @@ Template Name:フロント、サーチ、アーカイブページ用のフィー
               </p>
             </div>
             <div class="p-content__item">
-            <h3>
-              <?php $h2_take_out2 = CFS()->get('take_out_title_2'); ?>
+              <h3>
+                <?php $h2_take_out2 = CFS()->get('take_out_title_2'); ?>
                 <?php if(!empty($h2_take_out2)) {
                   echo esc_html($h2_take_out2);
                 } else { 

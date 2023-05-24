@@ -38,6 +38,11 @@
         margin-top: 10px;
       }
     }
+    // SP版で中央寄せにする
+    .wp-block-image {
+      display: flex;
+      justify-content: center;
+    }
     li {
       font-size: 16px;
     }
