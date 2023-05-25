@@ -8,6 +8,36 @@
         <?php if( have_posts() ) :  while( have_posts() ) : the_post(); ?>
           <h1 class="p-single-image"><?php echo get_the_title(); ?></h1>
           <article class="p-single--layout">
+          <h2>
+            <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
+            <?php  
+              if (is_plugin_active('custom-field-suite/cfs.php')) {
+                  $h2_menu = CFS()->get('h2_menu');
+                  if(!empty($h2_menu)) {
+                      echo esc_html($h2_menu); 
+                    } else { 
+                      echo '商品ページの見出しを入力します2';
+                    }
+              }else{
+                echo 'プラグインCFSを有効にし、商品ページの見出しを入力します';
+              }
+            ?>
+          </h2>
+          <p>
+            <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
+            <?php
+              if (is_plugin_active('custom-field-suite/cfs.php')) {  
+                $h2_menu_text = CFS()->get('h2_menu_text');
+                if(!empty($h2_menu_text)) {
+                  echo esc_html($h2_menu_text); 
+                } else { 
+                  echo '商品ページの説明文を入力します2';
+                }
+              }else{
+                echo 'プラグインCFSを有効にし、商品ページの説明文を入力します。プラグインCFSを有効にし、商品ページの説明文を入力します。プラグインCFSを有効にし、商品ページの説明文を入力します。プラグインCFSを有効にし、商品ページの説明文を入力します。プラグインCFSを有効にし、商品ページの説明文を入力します。';
+              }
+            ?>
+          </p>
             <?php the_content(); ?>
           </article>
         <?php endwhile;  endif; ?>
