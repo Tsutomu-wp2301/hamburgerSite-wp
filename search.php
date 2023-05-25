@@ -12,21 +12,33 @@ $id = $page->ID;
       </div>
       <article class="p-archive--content--wrapper">
         <h2 class="c-archive--titlle">
-          <?php $h2_search_title = CFS()->get('h2_search',$id); ?>
-            <?php if(!empty($h2_search_title)) {
-            echo esc_html($h2_search_title);
-            } else { 
-              echo 'サーチページの小見出しを設定します';
-            } 
+          <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
+          <?php 
+            if (is_plugin_active('custom-field-suite/cfs.php')) {
+              $h2_search_title = CFS()->get('h2_search',$id);
+              if(!empty($h2_search_title)) {
+                  echo esc_html($h2_search_title);
+                } else { 
+                  echo 'サーチページの小見出しを設定します';
+                } 
+            }else{
+              echo 'プラグインCFSを有効化し、カスタムフィールドからサーチページの小見出しを設定します';
+            }
           ?>
         </h2>
         <p>
-          <?php $search_text = CFS()->get('text_search',$id); ?>
-          <?php if(!empty($search_text)) {
-            echo esc_html($search_text);
-            } else { 
-              echo 'サーチページの説明文を入力します';
-            } 
+          <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
+          <?php 
+            if (is_plugin_active('custom-field-suite/cfs.php')) {
+              $search_text = CFS()->get('text_search',$id);
+              if(!empty($search_text)) {
+                  echo esc_html($search_text);
+                } else { 
+                  echo 'サーチページの説明文を入力します';
+                } 
+            }else{
+              echo 'プラグインCFSを有効化し、カスタムフィールドからサーチページの説明文を入力します';
+            }
           ?>
         </p>
 

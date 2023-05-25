@@ -32,7 +32,7 @@ function add_files(){
 
 
     // jQueryの読み込み
-    wp_enqueue_script( 'custom-script', get_theme_file_uri( '/JS/custom-script.js' ), array(), '1.0.0', true );
+    wp_enqueue_script( 'jQuery', get_theme_file_uri( '/JS/jQuery.js' ), array(), '1.0.0', true );
 
     // JSファイルの読み込み
     wp_enqueue_script('fadeIn_script', get_template_directory_uri().'/JS/fadeIn.js', array(),'1.0.0',true);
