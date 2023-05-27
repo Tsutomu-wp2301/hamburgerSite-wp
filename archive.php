@@ -37,7 +37,6 @@ $id = $page->ID;
           ?>
         </h2>
         <p>
-          <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
           <?php 
             if (is_plugin_active('custom-field-suite/cfs.php')) {
               $text_archive = CFS()->get('text_archive',$id);

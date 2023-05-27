@@ -1,6 +1,6 @@
 <?php  
   global $post;
-  $page_id = $post->ID;
+  $single_id = $post->ID;
 ?>
 
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
@@ -24,7 +24,6 @@
             ?>
           </h2>
           <p>
-            <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
             <?php
               if (is_plugin_active('custom-field-suite/cfs.php')) {  
                 $h2_menu_text = CFS()->get('h2_menu_text');
