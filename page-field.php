@@ -1,10 +1,3 @@
-<?php  
-  global $post;
-  if ( is_null( $post ) ) { return; }
-  $page_id = $post->ID;
-?>
-
-
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
 
 <?php 
