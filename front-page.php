@@ -4,6 +4,11 @@ $page = get_page_by_path('page-field');
 $id = $page->ID;
 ?>
 
+<?php 
+  global $global_page_id; 
+  require_once 'path/to/your/template/file.php';
+?>
+
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <h1 class="p-main-image">ダミーサイト</h1>
       <article class="p-content--wrapper">
@@ -15,7 +20,7 @@ $id = $page->ID;
               <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
               <?php  
                 if (is_plugin_active('custom-field-suite/cfs.php')) {
-                  $h2_take_out = CFS()->get('take_out_title_1',$id);
+                  $h2_take_out = CFS()->get('take_out_title_1', $id);
                   if(!empty($h2_take_out)) {
                       echo esc_html($h2_take_out);
                     } else { 
@@ -27,7 +32,6 @@ $id = $page->ID;
               ?>
               </h3>
               <p>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                     $text_take_out = CFS()->get('take_out_text_1',$id); 
@@ -44,7 +48,6 @@ $id = $page->ID;
             </div>
             <div class="p-content__item">
               <h3>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                     $h2_take_out2 = CFS()->get('take_out_title_2',$id); 
@@ -59,7 +62,6 @@ $id = $page->ID;
                 ?>
               </h3>
               <p>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                       $text_take_out2 = CFS()->get('take_out_text_2',$id); 
@@ -81,7 +83,6 @@ $id = $page->ID;
           <div class="p-content__item--wrapper">
             <div class="p-content__item">
               <h3>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                     $h2_eat_in = CFS()->get('eat_in_title_1',$id); 
@@ -96,7 +97,6 @@ $id = $page->ID;
                 ?>
               </h3>
               <p>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                     $text_eat_in = CFS()->get('eat_in_text_1',$id); 
@@ -113,7 +113,6 @@ $id = $page->ID;
             </div>
             <div class="p-content__item">
               <h3>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                     $h2_eat_in2 = CFS()->get('eat_in_title_2',$id); 
@@ -128,7 +127,6 @@ $id = $page->ID;
                 ?>
               </h3>
               <p>
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                     $text_eat_in2 = CFS()->get('eat_in_text_2',$id); 
@@ -150,7 +148,6 @@ $id = $page->ID;
         <div class="p-map">
           <div class="c-color-board">
             <h2 class="c-title map">
-                <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
                 <?php  
                   if (is_plugin_active('custom-field-suite/cfs.php')) {
                   $map_title1 = CFS()->get('map_title',$id); 
@@ -165,7 +162,6 @@ $id = $page->ID;
               ?>
             </h2>
             <p>
-              <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
               <?php  
                 if (is_plugin_active('custom-field-suite/cfs.php')) {
                   $text_map = CFS()->get('map_text',$id); 
