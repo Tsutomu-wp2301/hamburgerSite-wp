@@ -4,11 +4,6 @@ $page = get_page_by_path('page-field');
 $id = $page->ID;
 ?>
 
-<?php 
-  global $global_page_id; 
-  require_once 'path/to/your/template/file.php';
-?>
-
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <h1 class="p-main-image">ダミーサイト</h1>
       <article class="p-content--wrapper">
