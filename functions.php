@@ -39,6 +39,8 @@ function add_files(){
     wp_enqueue_script('fadeOut_script', get_template_directory_uri().'/JS/fadeOut.js', array(),'1.0.0',true);
     wp_enqueue_script('toggle_class_close_script', get_template_directory_uri().'/JS/toggle-class--close.js', array(),'1.0.0',true);
     wp_enqueue_script('toggle_class_open_script', get_template_directory_uri().'/JS/toggle-class--open.js', array(),'1.0.0',true);
+    wp_enqueue_script('link_TakeOut_script', get_template_directory_uri().'/JS/js-takeOut.js', array(),'1.0.0',true);
+    wp_enqueue_script('link_EatIn_script', get_template_directory_uri().'/JS/js-eatIn.js', array(),'1.0.0',true);
 
 }
 add_action('wp_enqueue_scripts', 'add_files');
