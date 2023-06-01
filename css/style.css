@@ -1874,6 +1874,11 @@ body {
     font-size: 16px;
     margin-bottom: 70px;
   }
+  .wp-pagenavi::before {
+    content: "page";
+    color: #707070;
+    margin-right: -20px;
+  }
   .p-navigation {
     display: flex;
     justify-content: center;
@@ -1920,6 +1925,11 @@ body {
     font-family: "Roboto";
     font-size: 16px;
     margin-bottom: 70px;
+  }
+  .wp-pagenavi::before {
+    content: "page";
+    color: #707070;
+    margin-right: -20px;
   }
   .p-navigation {
     display: flex;
