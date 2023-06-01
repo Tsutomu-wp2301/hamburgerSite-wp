@@ -49,7 +49,6 @@ $id = $page->ID;
 
       </article>
       <nav class="p-navigation">
-        <p>page</p>
         <?php wp_pagenavi(); ?>
       </nav>
       <div class="c-color-board--black"></div><!-- メニュー展開時に画面を暗くする -->
