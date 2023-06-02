@@ -7,7 +7,8 @@ $id = $page->ID;
 <?php get_header(); ?><!-- ヘッダーの呼び出し -->
       <div class="p-archive--image">
         <div class="c-bg--black--archive">
-          <h1>Search:</h1>
+          <h1>Search:  <?php echo esc_attr( get_search_query() ); ?>
+</h1>
         </div>
       </div>
       <article class="p-archive--content--wrapper">
