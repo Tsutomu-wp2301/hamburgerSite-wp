@@ -25,7 +25,7 @@ add_filter( 'pre_get_document_title', 'hamburgerSite_title' );
 // スタイルシート、JSファイルの読み込み
 function add_files(){
     // CSSファイルの読み込み
-    wp_enqueue_style('my_style', get_template_directory_uri().'/css/style.css', array(),'1.0.0');
+    wp_enqueue_style('my_style', get_template_directory_uri().'/css/style.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/style.css' )));
 
     // グーグルフォントの読み込み
     wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(),'1.0.0');
